@@ -2,11 +2,11 @@ import streamlit as st
 import pickle as pkl
 import pandas as pd
 
-movies_dict = pkl.load(open('E:\Movie Recommender System\movies_dict.pkl','rb'))
+movies_dict = pkl.load(open('movies_dict.pkl','rb'))
 
 movies = pd.DataFrame(movies_dict)
 
-similarity = pkl.load(open('E:\Movie Recommender System\similarity.pkl','rb'))
+similarity = pkl.load(open('similarity.pkl','rb'))
 
 def recommend(movie):
     movie_index = movie[movie['title'] == movie].index[0]
