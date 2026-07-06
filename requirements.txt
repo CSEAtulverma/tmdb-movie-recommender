@@ -1,0 +1,8 @@
+pandas
+numpy
+matplotlib
+scikit-learn==1.8.0
+seaborn
+streamlit
+ipykernel
+nltk
